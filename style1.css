@@ -1,0 +1,30 @@
+body {
+	background-image: url(img/1.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.box {
+	width: 700px;
+	margin: 240px auto;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: lato;
+	text-align: center;
+}
+.typed {
+	color: #80caff;
+}
+.box h2 {
+	font-size: 80px;
+	color: #fff;
+	margin: 0;
+	font-family: lato;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+#example {
+	margin: 0;
+	color: #fff;
+}
