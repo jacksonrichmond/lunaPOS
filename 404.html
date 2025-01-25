@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404: This page could not be found.</title>
+
+ <script>
+        let titleText = "404: This page could not be found. ";
+        let scrollPosition = 0;
+
+        function scrollTitle() {
+            document.title = titleText.substring(scrollPosition) + titleText.substring(0, scrollPosition);
+            scrollPosition++;
+            if (scrollPosition > titleText.length) {
+                scrollPosition = 0;
+            }
+        }
+
+        setInterval(scrollTitle, 200); // Adjust the interval for speed of scrolling
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
