@@ -9,15 +9,18 @@
         let titleText = [
             "404: This page could not be found.",
             "lunaPOS.",
-            "We couldn't locate the page you are looking for."
+        
         ];
 
         let currentLine = 0;
         let scrollPosition = 0;
+        const scrollSpeed = 100; // Scroll speed in milliseconds (lower is faster)
 
         function scrollTitle() {
             let lineText = titleText[currentLine];
-            document.title = lineText.substring(scrollPosition) + lineText.substring(0, scrollPosition);
+            let visibleText = lineText.substring(scrollPosition) + lineText.substring(0, scrollPosition);
+            document.title = visibleText;
+
             scrollPosition++;
             if (scrollPosition > lineText.length) {
                 scrollPosition = 0;
@@ -25,7 +28,7 @@
             }
         }
 
-        setInterval(scrollTitle, 200); // Adjust speed of scrolling
+        setInterval(scrollTitle, scrollSpeed); // Adjust interval for smoother scroll
     </script>
     <style>
         body {
