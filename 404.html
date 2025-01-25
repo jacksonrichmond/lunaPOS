@@ -6,18 +6,26 @@
     <title>404: This page could not be found.</title>
 
  <script>
-        let titleText = "404: This page could not be found. ";
+        let titleText = [
+            "404: This page could not be found.",
+            "lunaPOS.",
+            "We couldn't locate the page you are looking for."
+        ];
+
+        let currentLine = 0;
         let scrollPosition = 0;
 
         function scrollTitle() {
-            document.title = titleText.substring(scrollPosition) + titleText.substring(0, scrollPosition);
+            let lineText = titleText[currentLine];
+            document.title = lineText.substring(scrollPosition) + lineText.substring(0, scrollPosition);
             scrollPosition++;
-            if (scrollPosition > titleText.length) {
+            if (scrollPosition > lineText.length) {
                 scrollPosition = 0;
+                currentLine = (currentLine + 1) % titleText.length;
             }
         }
 
-        setInterval(scrollTitle, 200); // Adjust the interval for speed of scrolling
+        setInterval(scrollTitle, 200); // Adjust speed of scrolling
     </script>
     <style>
         body {
