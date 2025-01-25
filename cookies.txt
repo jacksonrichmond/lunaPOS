@@ -1,7 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-lcscripts.com	TRUE	/	FALSE	1999999999	i18n_redirected	en-US
-lcscripts.com	TRUE	/	FALSE	1999999999	SameSite	Lax
-.tebex.io	TRUE	/	FALSE	1999999999	__cf_bm	tqoEgYCrE31mchERbAvqORn.zWMT2_V3HFyMlx5KvbI-1721680731-1.0.1.1-N3Ol.7SUlQN8vhd1WHV9CGtgQathD0SDWBwu51AQUXWCsRPoO2gosRxXp0RMwDQfaNhLWcaIkn9jNfGjI_srLA
-js.tebex.io	TRUE	/	FALSE	1999999999	SameSite	None
-
